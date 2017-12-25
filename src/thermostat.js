@@ -12,3 +12,11 @@ Thermostat.prototype.isPowerSaving = function(){
 Thermostat.prototype.getCurrentTemperature = function(){
   return this.temperature
 }
+
+Thermostat.prototype.powerSavingOn = function(){
+  this.powerSaving = true;
+};
+
+Thermostat.prototype.powerSavingOff = function(){
+  this.powerSaving = false;
+};
