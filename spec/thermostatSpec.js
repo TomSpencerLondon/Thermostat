@@ -40,4 +40,20 @@ describe("A thermostat", function(){
     expect(thermostat.getCurrentTemperature()).toEqual(20);
   });
 
+  it("Should show message 'low-usage' when energy usage is low", function(){
+    for(var i = 0; i < 3; i ++){thermostat.down()}
+    expect(thermostat.reportUsage()).toEqual("low-usage");
+  });
+
+  it("Should show message 'medium-usage' when energy usage is medium", function(){
+    for(var i = 0; i < 4; i ++){thermostat.up()}
+    expect(thermostat.reportUsage()).toEqual("medium-usage");
+  });
+
+  it("Should show message 'high-usage' when energy usage is high", function(){
+    thermostat.powerSavingOff()
+    for(var i = 0; i < 6; i++){thermostat.up()}
+    expect(thermostat.reportUsage()).toEqual("high-usage");
+  });
+
 });
