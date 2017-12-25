@@ -34,4 +34,10 @@ describe("A thermostat", function(){
     expect(thermostat.getCurrentTemperature()).toEqual(19)
   });
 
+  it("Should have a reset button that resets temperature to 20", function(){
+    thermostat.up();
+    thermostat.reset();
+    expect(thermostat.getCurrentTemperature()).toEqual(20);
+  });
+
 });

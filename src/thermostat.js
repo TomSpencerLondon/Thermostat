@@ -29,9 +29,13 @@ Thermostat.prototype.up = function(){
   if(this.powerSaving && this.temperature >= this.MAX_TEMP_POWERSAVING){throw Error("Max temperature is 25 when power saving is on")};
   if(!this.powerSaving && this.temperature >= this.MAX_TEMP){throw Error("Max temperature is 32")}
   this.temperature ++;
-}
+};
 
 Thermostat.prototype.down = function(){
   if(this.temperature === this.MIN_TEMP){ throw Error("The lowest temperature is 10") }
   this.temperature --;
-}
+};
+
+Thermostat.prototype.reset = function(){
+  this.temperature = 20;
+};
