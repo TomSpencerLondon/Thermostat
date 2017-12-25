@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thermostat</title>
+  <link rel="shortcut icon" href="img/thermometer-favicon.ico" type="image/x-icon">
+  <script src="src/thermostat.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type='text/css' href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+  <p>
+    <section id='controller'>
+      <h1 id="header">Thermostat</h1>
+      <div id='temp-box'>
+        <span id="temp"></span>
+      </div>
+      <div id='container'>
+        <button id="turn-up">+</button>
+        <button id="turn-down">-</button>
+        <button id="reset">reset</button>
+        <br>
+        <br>
+        <div id='power'>
+          Power saving mode is
+          <span id="power-save-status">on</span>
+          <br>
+        </div>
+        <button id="powersave-on">Power Saving Mode on</button>
+        <div id='space'></div>
+        <button id="powersave-off">Power Saving Mode Off</button>
+      </div>
+    </section>
+  </p>
+
+  <section id="current-city">
+    <form id="select-city">
+      <input id="current-city" type="text" placeholder="Enter a city"></input>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    <span id="current-temperature"></span>
+  </section>
+</body>
+
+</html>
