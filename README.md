@@ -25,6 +25,7 @@ $ open -a safari SpecRunner.html
 <img src="thermostat.gif" title="image of thermostat application"/>
 </p>
 ## <a name="Stories">User Stories</a>
+
 ```
 Thermostat starts at 20 degrees
 
