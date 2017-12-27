@@ -1,0 +1,151 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px
+}
+
+h2 {
+  text-align: center;
+  font-size: 65px
+}
+
+p {
+  text-align: center;
+}
+
+div#container {
+  text-align: center;
+  position: relative;
+  border: white
+}
+
+section#controller {
+  padding-top: 10px;
+}
+
+section#current_city {
+  padding-top: 5px;
+  text-align: center;
+  position: relative;
+}
+
+select#city {
+  outline: none;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  color: rgb(94, 93, 93);
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  text-align: center;
+  white-space: nowrap;
+}
+
+button {
+  display: inline-block;
+  border: solid 1.5px white;
+  outline: none;
+  color: white;
+  border-radius: 34px;
+  position: relative;
+  background-color: brown;
+  width: 90px;
+  height: 50px;
+  left: 4px;
+  bottom: 4px;
+  font-size: 18px;
+  border-color: white;
+  margin-right: 10px;
+}
+
+button#turn-up {
+  border-radius: 50%;
+  width: 50px;
+}
+
+button#turn-down {
+  border-radius: 50%;
+  width: 50px;
+}
+
+button#submit {
+  top: 0px;
+  position: relative;
+  /* margin-top: 5px; */
+  height: 33px;
+  font-size: 12px;
+}
+
+button:active {
+  transform: translateY(1px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+div#power {
+  padding-bottom: 20px
+}
+
+div#space {
+  display: inline-block;
+  width: 15px;
+}
+
+div#temp-box {
+  background-image: none !important;
+  transition: background-color 2000ms linear;
+  animation-iteration-count: 2;
+  border: solid 2px white;
+  text-align: center;
+  margin: auto;
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+  left: 50%;
+  margin-bottom: 20px;
+}
+
+span#temp {
+  font-size: 100px;
+  line-height: 200%
+}
+
+input[type=text] {
+  text-align: center;
+  font-size: 12px;
+  width: 115px;
+  height: 30px;
+  border: 1px;
+  border-radius: 34px;
+  border: 1px
+  solid rgb(255, 255, 255);
+  vertical-align: bottom
+}
+
+input[type=text]:focus {
+  border-color:rgb(151, 151, 151);
+  outline: none;
+}
+
+
+.low-usage {
+  background-color: rgb(74, 183, 255);
+}
+
+.medium-usage {
+  background-color: rgb(103, 121, 224);
+}
+
+.high-usage {
+  background-color: rgb(189, 77, 77);
+}
