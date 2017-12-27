@@ -23,7 +23,8 @@ $ open -a safari SpecRunner.html
 ```
 <p align="center">
 <img src="thermostat.gif" title="image of thermostat application"/>
-</p>
+</p> 
+
 ## <a name="Stories">User Stories</a>
 
 ```
